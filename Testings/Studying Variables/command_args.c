@@ -6,9 +6,9 @@ int main(int argc, char *argv[]){
     char *argument1 = argv[0];
     char *argument2 = argv[1];
 
-    printf("%d\n", numberOfArgs);
-    printf("%s\n", argument1);
-    printf("%s\n", argument2);
+    printf("Number of the arguments: %d\n", numberOfArgs);
+    printf("The name of the program is: %s\n", argument1);
+    printf("The 2nd argument parsed was: %s\n", argument2);
     return 0;
 
 }
