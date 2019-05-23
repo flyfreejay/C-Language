@@ -1,0 +1,8 @@
+Operaters are functions that use a symbolic name to perform mathematical or logical functions
+They are predefined in C
+--Logica; Operater--
+Logical operator return boolean values
+--arithmetic operator--
+Arithmetic operator is mathematical operators.
+--other--
+other operator inclueds bitwise, or relational
