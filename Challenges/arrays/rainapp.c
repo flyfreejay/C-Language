@@ -11,17 +11,6 @@
 #define YEARS 5
 
 int main(){
-    int a,b;
-    int sum = 0;
-    
-    
-    int monthlySum =0;
-    int yearIndex = 0;
-    int currentMonth = 1;
-    int monthIndex = 0;
-    int yearlyAverage =0;
-    float yearTotals[5]={0};
-    float monthlyAverages[12] = {0};
     float rain[YEARS][MONTHS] =
         {
             {4.3,4.3,4.3,3.0,2.0,1.2,0.2,0.2,0.4,2.4,3.5,6.6},
@@ -31,38 +20,17 @@ int main(){
             {7.6,5.6,3.8,2.8,3.8,0.2,0.0,0.0,0.0,1.3,2.6,5.2}
         };
 
-    //going through the years
-    for (a = 0; a< 5; a++){
-        monthlySum = 0;
-        for (b = 0; b<12; b++){
-            //finding sum of the monthly rain falls for 'a' year
-            monthlySum += rain[a][b];
-            printf("%0.1f\t", rain[a][b]);
+    int year, month;
+    float subtot, total;
 
-            
+    printf("YEAR\t\tRAINFALL (inches)\n");
+    for (year = 0; total = 0; year< YEARS; year++){
+        for (month = 0; subtotal = 0, month < MONTHS; month++){
+            subtotal += rain[year][month];
+
         }
-        //totalling them in the yearTotal array 
-        yearTotals[yearIndex] = monthlySum;
-        yearIndex++;    //increase the index key to move to next year
-    }
-
-
-    //Find the yearly average
-    for (int i =0; i<5; i++){
-        sum += yearTotals[i];
+        total += subtotal
         
     }
-    yearlyAverage = (float)sum/5;
-    printf("\n%0.1f",yearlyAverage);
-
-
-
-
-
-
-
-
-
-
     return 0;
 }
