@@ -1,0 +1,16 @@
+//
+//  main.c
+//  CCC 01 Sx - Keeping Score:
+//
+//
+//  Created by Jaehyung Lee on 20xx-xx-xx.
+//  Copyright © 2019 Jaehyung Lee. All rights reserved.
+//
+
+#include <stdio.h>
+
+int main(int argc, const char * argv[]) {
+    
+    printf("Hello, World!\n");
+    return 0;
+}
